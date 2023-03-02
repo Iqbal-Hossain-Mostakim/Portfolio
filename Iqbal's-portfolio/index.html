@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqbal Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!--connect html and css file -->
+    <script src="https://kit.fontawesome.com/5c38d29b3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src = "images/logo100.png" class="logo">
+                <ul id="sidemenu"> <!-- list of menu{unorder list} -->
+                    <li></a href="#">Projets</li><!--using a tag for click able link -->
+                    <li></a href="#">Skills</li>
+                    <li></a href="#">Education</li>
+                    <li></a href="#">Contact</li>   
+                    <i class="fas fa-times" onclick="closemenu()"></i>  
+                </ul>
+
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fresh Graduate</p>
+                <h1>Hi, I'm <span> Iqbal </span> <br> From Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------My Project----------->
+    <div id="about">
+        <div class="container">
+            <div class="row"> <!--two column-->
+                <div class="about-col-1"><!--first left column-->
+                    <img src="images/user11.jpg">
+                </div>
+                <div class="about-col-2"><!--second right column-->
+                    <h1 class="sub-title"> About Me</h1>
+                    <h2 class="project-title"></h2>
+                    <p> </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <br>
+                        <div class="tab-contents active-tab" id="projects">
+                            <ul><span>Melanoma Classification Using Deep Learning Techniques</span><br>The highest accuracy achieved was 90%. The total number of epochs was 50. ools and technologies used: pretrained model is
+                                SEResNext50_32x4d. Python libraries are torch, numpy,
+                                pandas, albumentations, PIL, turtle, scikit-learn, tqdm.
+                                Convolutional Neural Network (CNN) to analyze visual
+                                imagery. </ul>
+                            <ul><span>Web Development</span><br>Web app Development</ul>
+                            <ul><span>App Development</span><br>Bulilding Desktop app </ul>
+                        </div> 
+                        <div class="tab-contents" id="skills">
+                            <ul><span>Desktop App</span><br>Designing Web/App interface</ul>
+                            
+                        </div>
+                        <div class="tab-contents"id="education">
+                            <ul><span>B.S.C.</span><br>Computer Science and Engineering</ul>
+                            
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!------------Skills--------------->
+    <div id="Skills">
+        <div class="container">
+            <h1 class="sub-title"> My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python <br> Tkinter</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-css3"></i>
+                    <h2>CSS</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h2>Bootstrap</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                </div> 
+                <div>
+                    <i class="fa-solid fa-c"></i>
+                    <h2>C</h2>
+                </div> 
+                <div>
+                    <h2>C++</h2>
+                </div> 
+                <div>
+                    <h2>SQL</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Reactjs</h2>
+                </div> 
+                <div>
+                    <h2>Machine Learning</h2>
+                </div> 
+                <div>
+                    <h2>Deep Learning</h2>
+                </div>
+                <div>
+                    <h2>Canva</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>Figma</h2>
+                </div>
+                <div>
+                    <h2>SketchUp</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------Contact------------ -->    
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>hossain.iqbal3@northsouth.edu</p>
+            <p><i class="fa-solid fa-phone-volume"></i>01856916624</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100006429092370"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/Iqbal-Hossain-Mostakim"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/iqbal-hossain-mostakim-825374262/"><i class="fa-brands fa-linkedin"></i></a> 
+                       
+             </div>
+             <a href="images/Iqbal Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>    
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Iqbal  </p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
